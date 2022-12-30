@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            flex-direction: column; 
+        }
+        .container{
+            border: 2px solid burlywood;
+            padding: 10px;
+            height: 160px;
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .input-text{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="" id="img">
+    </div>
+    <div class="input-text">
+        <input type="text" id="qr-text">
+        <button onclick="createQr()">SUBMIT</button>
+    </div>
+    <script>
+       function createQr(){
+        let txt = document.getElementById('qr-text').value;
+        document.getElementById('img').src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${tet}';
+       }
+    </script>
+</body>
+</html>
