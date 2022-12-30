@@ -9,7 +9,6 @@ addBtn.addEventListener('click' , () => {
         newItem.classList.add('item');
         newItem.innerHTML = `<p> ${input.value} </p>
         <div class="item-btn">
-           <i class="fa-sharp fa-solid fa-pen-to-square"></i>
            <i class="fa-sharp fa-solid fa-xmark"></i>
         </div>`
 
